@@ -9,9 +9,14 @@ const filtersReducer = (state = initState, action) => {
   switch (action.type) {
     case "filter/searchFilterChange":
       return {
-        ...state.filter,
+        ...state,
         search: action.payload,
       };
+      case 'filter/statusFilterChange':
+        return {
+          ...state,
+          status: action.payload,
+        }
     default:
       return state;
   }
