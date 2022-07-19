@@ -4,7 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import {addTodo} from '../../redux/actions'
 import {v4 as uuidv4} from 'uuid'
 import { useState } from 'react';
-import { todoListSelector, searchTextSelector } from '../../redux/selectors';
+//import { todoListSelector, searchTextSelector } from '../../redux/selectors';
+import { todoRemainingSelector} from '../../redux/selectors';
 
 export default function TodoList() {
   const [todoName, setTodoName] = useState('')
@@ -12,11 +13,12 @@ export default function TodoList() {
 
   const dispatch = useDispatch()
 
-  const todoList = useSelector(todoListSelector)
+  //const todoList = useSelector(todoListSelector)
+  const todoList = useSelector(todoRemainingSelector)
 
-  const searchText = useSelector(searchTextSelector)
 
-  console.log('ahahiahahiah',{todoList, searchText})
+  //const searchText = useSelector(searchTextSelector)
+  //onsole.log('ahahiahahiah',{todoList, searchText})
 
   const handleAddButtonClick = () => {
     dispatch(addTodo({  // yarn add uuid
