@@ -1,5 +1,45 @@
 @import '~antd/dist/antd.css';
 
 .ant-select-multiple .ant-select-selection-item {
-  height: 27px;
+  
+}
+
+.br{
+  background-color: #282a36;
+}
+
+h1{
+  text-align: center;
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+h1:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(filter-content);
+
+  filter: url(#motion-blur-filter);
+}
+
+.App {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #44475a;
+  padding: 20;
+  box-shadow: 0 0 10px 4px #bfbfbf;
+  border-radius: 10px;
+  height: 90vh;
+
 }
