@@ -1,4 +1,4 @@
-import { Typography, Divider } from 'antd';
+import { Divider } from 'antd';
 import './App.css';
 import TodoList from './components/TodoList';
 import Filters from './components/Filters';
