@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTodo } from "../../redux/actions";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
-//import { todoListSelector, searchTextSelector } from '../../redux/selectors';
 import { todoRemainingSelector } from "../../redux/selectors";
 
 export default function TodoList() {
@@ -13,11 +12,7 @@ export default function TodoList() {
 
   const dispatch = useDispatch();
 
-  //const todoList = useSelector(todoListSelector)
   const todoList = useSelector(todoRemainingSelector);
-
-  //const searchText = useSelector(searchTextSelector)
-  //onsole.log('ahahiahahiah',{todoList, searchText})
 
   const handleAddButtonClick = () => {
     dispatch(
@@ -34,12 +29,10 @@ export default function TodoList() {
   };
 
   const handleInputChange = (e) => {
-    //console.log('xxxxx', e.target.value)
     setTodoName(e.target.value);
   };
 
   const handlePriorityChange = (value) => {
-    //console.log({value})
     setPriority(value);
   };
 
