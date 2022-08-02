@@ -1,6 +1,8 @@
 ## Đây là source code của ứng dụng TODO APP bằng React + Redux
 Video tutorial: https://youtu.be/g_K1w8e0lLo \
-Live Demo: https://focused-engelbart-3d0ac1.netlify.app/
+Live Demo: https://study-redux-8m36sfqjz-nguyenmanhha0306.vercel.app/
+
+![image](https://user-images.githubusercontent.com/65169088/179966576-a033b99e-df91-4f91-b577-c9d1a1d8068d.png)
 
 # Getting Started with Create React App
 
